@@ -1,6 +1,6 @@
 ---
 - name: Run Updates on Terminal Servers then wait 7 mins
-  hosts: terminalservers
+  hosts: all
   connection: winrm
 
   tasks:
