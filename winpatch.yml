@@ -1,4 +1,4 @@
-- name: Run Updates on Terminal Servers then wait 7 mins
+name: Run Updates on Terminal Servers then wait 7 mins
 [terminalservers]
 10.158.1.246
   hosts: terminalservers
