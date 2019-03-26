@@ -1,4 +1,6 @@
-- hosts: all
+---
+- name: Run Updates on Terminal Servers then wait 7 mins
+  hosts: terminalservers
   connection: winrm
 
   tasks:
@@ -9,5 +11,7 @@
         - DefinitionUpdates
         - SecurityUpdates
         - Updates
+      whitelist:
+        - KB4093120
     reboot: yes
     reboot_timeout: 420
